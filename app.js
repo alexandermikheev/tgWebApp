@@ -13,15 +13,19 @@ let item = {
     message:"",
 };
 
-let btn1 = document.getElementById("btn1");
+let fio = document.getElementById("fio");
+let telnuber = document.getElementById("telnuber");
+let jobTitle = document.getElementById("jobTitle");
+let сitizenship = document.getElementById("сitizenship");
 
-btn1.addEventListener("click", function(){
+
+fio.addEventListener("input", function(){
     event.preventDefault();
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
+		tg.MainButton.setText("Отправить");
 		let datafio = document.getElementById("fio").value;
 
         datafio.value = `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`;
@@ -44,10 +48,3 @@ btn1.addEventListener("click", function(){
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
   JSON.stringify(tg.sendData(item));
 });
-
-let usercard = document.getElementById("usercard");
-
-
-
-
-usercard.appendChild(p); 
