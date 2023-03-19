@@ -23,6 +23,9 @@ btn1.addEventListener("click", function(){
 	else {
 		tg.MainButton.setText("Вы выбрали товар 1!");
 		let datafio = document.getElementById("fio").value;
+
+        datafio.value = `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`;
+
         let datamuber = document.getElementById("telnuber").value;
         let datajobTitle = document.getElementById("jobTitle").value;
         let dataсitizenship = document.getElementById("сitizenship").value;
@@ -44,10 +47,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
 
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
 
 
 usercard.appendChild(p); 
