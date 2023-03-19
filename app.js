@@ -16,12 +16,22 @@ let item = {
 let btn1 = document.getElementById("btn1");
 
 btn1.addEventListener("click", function(){
+    event.preventDefault();
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
+		let datafio = document.getElementById("fio").value;
+        let datamuber = document.getElementById("telnuber").value;
+        let datajobTitle = document.getElementById("jobTitle").value;
+        let dataсitizenship = document.getElementById("сitizenship").value;
+        let datamessage = document.getElementById("message").value;
+        item.fio = datafio;
+        item.muber = datamuber;
+        item.jobTitle = datajobTitle;
+        item.сitizenship = dataсitizenship;
+        item.message = datamessage;
 		tg.MainButton.show();
 	}
 });
@@ -29,7 +39,7 @@ btn1.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+  JSON.stringify(tg.sendData(item));
 });
 
 let usercard = document.getElementById("usercard");
