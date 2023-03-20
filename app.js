@@ -7,7 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = {
     fio:"",
-    muber:"",
+    nuber:"",
     jobTitle:"",
     сitizenship:"",
     message:"",
@@ -28,7 +28,7 @@ fio.addEventListener("input", function(){
 		tg.MainButton.setText("Отправить");
 
         item.fio = fio.value;
-        item.muber = telnuber.value;
+        item.nuber = telnuber.value;
         item.jobTitle = jobTitle.value;
         item.сitizenship = сitizenship.value;
         item.message = message.value;
