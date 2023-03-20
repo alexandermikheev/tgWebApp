@@ -1,5 +1,10 @@
 let tg = window.Telegram.WebApp;
-
+const fio = document.getElementById("fio");
+const telnuber = document.getElementById("telnumber");
+const jobTitle = document.getElementById("jobTitle");
+const сitizenship = document.getElementById("сitizenship");
+const message = document.getElementById("message")
+const form = document.querySelectorAll("input")
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
@@ -13,21 +18,13 @@ let item = {
     msg:"",
 };
 
-const fio = document.getElementById("fio");
-const telnuber = document.getElementById("telnumber");
-const jobTitle = document.getElementById("jobTitle");
-const сitizenship = document.getElementById("сitizenship");
-const message = document.getElementById("message")
-const form = document.querySelectorAll("input")
-// fio.value += `${tg.initDataUnsafe?.user?.last_name + tg.initDataUnsafe?.user?.first_name}`; 
-
 form.forEach(inp => {
     inp.addEventListener("input", button)
     
 });
 
 function button(){
-    if (fio.value == "" && telnuber.value == ""  && сitizenship.value == "" ) {
+    if (!fio.value || !telnuber.value || !сitizenship.value) {
 		tg.MainButton.hide();
 	}
 	else {
