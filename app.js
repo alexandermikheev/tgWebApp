@@ -13,11 +13,11 @@ tg.MainButton.color = "#e8ae2d";
 
 
 let item = {
-    fio:"",
-    number:"",
-    jobTitle:"",
-    сship:"",
-    msg:"",
+    fio: "",
+    number: "",
+    jobTitle: "",
+    сship: "",
+    msg: "",
 };
 
 form.forEach(inp => {
