@@ -14,14 +14,20 @@ let item = {
 };
 
 const fio = document.getElementById("fio");
-const telnuber = document.getElementById("telnuber");
+const telnuber = document.getElementById("telnumber");
 const jobTitle = document.getElementById("jobTitle");
 const сitizenship = document.getElementById("сitizenship");
 const message = document.getElementById("message")
-fio.value += `${tg.initDataUnsafe?.user?.last_name + tg.initDataUnsafe?.user?.first_name}`; 
+const form = document.querySelectorAll("input")
+// fio.value += `${tg.initDataUnsafe?.user?.last_name + tg.initDataUnsafe?.user?.first_name}`; 
 
-fio.addEventListener("input", function(){
-	if (fio.value == "" && telnuber.value == ""  && сitizenship.value == "" ) {
+form.forEach(inp => {
+    inp.addEventListener("input", button)
+    
+});
+
+function button(){
+    if (fio.value == "" && telnuber.value == ""  && сitizenship.value == "" ) {
 		tg.MainButton.hide();
 	}
 	else {
@@ -34,8 +40,7 @@ fio.addEventListener("input", function(){
         item.msg = message.value;
 		tg.MainButton.show();
 	}
-});
-
+}
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
