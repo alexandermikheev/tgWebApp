@@ -21,7 +21,7 @@ const message = document.getElementById("message")
 fio.value += `${tg.initDataUnsafe?.user?.last_name + tg.initDataUnsafe?.user?.first_name}`; 
 
 fio.addEventListener("input", function(){
-	if (!fio.value && !telnuber.value && !сitizenship.value) {
+	if (fio.value === "" || telnuber.value === ""  || сitizenship.value === "" ) {
 		tg.MainButton.hide();
 	}
 	else {
