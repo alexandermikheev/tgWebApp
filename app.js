@@ -7,7 +7,7 @@ tg.MainButton.color = "#2cab37";
 
 let item = {
     fio:"",
-    nuber:"",
+    number:"",
     jobTitle:"",
     сship:"",
     msg:"",
