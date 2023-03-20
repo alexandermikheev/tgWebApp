@@ -18,7 +18,7 @@ const telnuber = document.getElementById("telnuber");
 const jobTitle = document.getElementById("jobTitle");
 const сitizenship = document.getElementById("сitizenship");
 const message = document.getElementById("message")
-
+fio.value += `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`; 
 
 fio.addEventListener("input", function(){
 	if (tg.MainButton.isVisible) {
@@ -26,8 +26,6 @@ fio.addEventListener("input", function(){
 	}
 	else {
 		tg.MainButton.setText("Отправить");
-
-        fio.value = `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`;        
 
         item.fio = fio.value;
         item.muber = telnuber;
