@@ -8,7 +8,8 @@ const form = document.querySelectorAll("input")
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.color = "#e8ae2d";
+
 
 let item = {
     fio:"",
