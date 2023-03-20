@@ -9,17 +9,20 @@
 <body>
 
 	<div class="container">
+        <div class="logo">
+            <img src="/img/brand-Mobil.svg" alt="">
+        </div>
 		<div class="inner">
 			<div class="form-box">
                 <div class="form-value">
                     <form action="">
                         <div class="inputbox">
                             <label class="labtext" for="fio">ФИО*</label>
-                            <input id="fio" type="text" required>
+                            <input id="fio" type="text" required placeholder="Иванов Инван Иванович">
                         </div>
                         <div class="inputbox">
                             <label class="labtext"   for="telnuber">Телефон*</label>
-                            <input id="telnumber" type="number" required>
+                            <input type="tel" id="telnumber" name="phone" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{4}" placeholder="+7(999)456-8901" required>
                         </div>
                         <div class="inputbox">
                             <label class="labtext"  for="jobTitle">Должность*</label>
@@ -32,11 +35,11 @@
                         </div>
                         <div class="inputbox">
                             <label class="labtext"  for="сitizenship">Гражданство*</label>
-                            <input id="сitizenship" type="text" required>
+                            <input id="сitizenship" type="text"  required placeholder="РФ">
                         </div>
                         <div class="inputbox">
                             <label class="labtext"  for="message">Сообщение</label>
-                            <input id="message" type="text" required>
+                            <textarea id="message" type="text" required placeholder="Добрый день! Ваше сообщение...."></textarea>
                         </div>
                     </form>
                 </div>
