@@ -9,8 +9,8 @@ let item = {
     fio:"",
     nuber:"",
     jobTitle:"",
-    сitizenship:"",
-    message:"",
+    сship:"",
+    msg:"",
 };
 
 const fio = document.getElementById("fio");
@@ -30,8 +30,8 @@ fio.addEventListener("input", function(){
         item.fio = fio.value;
         item.nuber = telnuber.value;
         item.jobTitle = jobTitle.value;
-        item.сitizenship = сitizenship.value;
-        item.message = message.value;
+        item.сship = сitizenship.value;
+        item.msg = message.value;
 		tg.MainButton.show();
 	}
 });
