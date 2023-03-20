@@ -18,10 +18,10 @@ const telnuber = document.getElementById("telnuber");
 const jobTitle = document.getElementById("jobTitle");
 const сitizenship = document.getElementById("сitizenship");
 const message = document.getElementById("message")
-fio.value += `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`; 
+fio.value += `${tg.initDataUnsafe?.user?.last_name + tg.initDataUnsafe?.user?.first_name}`; 
 
 fio.addEventListener("input", function(){
-	if (tg.MainButton.isVisible) {
+	if (!fio.value && !telnuber.value && !сitizenship.value) {
 		tg.MainButton.hide();
 	}
 	else {
