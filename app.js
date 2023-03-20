@@ -34,7 +34,7 @@ function button(){
 		tg.MainButton.setText("Отправить");
 
         item.fio = fio.value;
-        item.nuber = telnuber.value;
+        item.number = telnuber.value;
         item.jobTitle = jobTitle.value;
         item.сship = сitizenship.value;
         item.msg = message.value;
