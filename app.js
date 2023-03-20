@@ -5,7 +5,7 @@ const jobTitle = document.getElementById("jobTitle");
 const сitizenship = document.getElementById("сitizenship");
 const message = document.getElementById("message")
 const form = document.querySelectorAll("input")
-const texrarea = document.querySelectorAll("texrarea")
+const texrarea = document.querySelectorAll("textarea")
 tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
@@ -25,7 +25,7 @@ form.forEach(inp => {
     
 });
 texrarea.forEach(inp => {
-    inp.addEventListener("input", msgTxtAria)
+    inp.addEventListener("input", button)
     
 });
 
@@ -34,16 +34,17 @@ function button(){
 		tg.MainButton.hide();
 	}
 	else {
-        item.fio = fio.value;
-        item.number = telnuber.value;
-        item.jobTitle = jobTitle.value;
-        item.сship = сitizenship.value;
-        item.msg = message.value;
+        sendDats()
         tg.MainButton.setText("Отправить");
 		tg.MainButton.show();
 	}
 }
-function msgTxtAria(){
+
+function sendDats(){
+    item.fio = fio.value;
+    item.number = telnuber.value;
+    item.jobTitle = jobTitle.value;
+    item.сship = сitizenship.value;
     item.msg = message.value;
 }
 
