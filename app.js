@@ -28,9 +28,9 @@ fio.addEventListener("input", function(){
 		tg.MainButton.setText("Отправить");
 
         item.fio = fio.value;
-        item.muber = telnuber;
-        item.jobTitle = jobTitle;
-        item.сitizenship = сitizenship;
+        item.muber = telnuber.value;
+        item.jobTitle = jobTitle.value;
+        item.сitizenship = сitizenship.value;
         item.message = message.value;
 		tg.MainButton.show();
 	}
