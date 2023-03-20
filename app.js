@@ -20,7 +20,6 @@ let сitizenship = document.getElementById("сitizenship");
 
 
 fio.addEventListener("input", function(){
-    event.preventDefault();
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
