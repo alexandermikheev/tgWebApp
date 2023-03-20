@@ -13,10 +13,11 @@ let item = {
     message:"",
 };
 
-let fio = document.getElementById("fio");
-let telnuber = document.getElementById("telnuber");
-let jobTitle = document.getElementById("jobTitle");
-let сitizenship = document.getElementById("сitizenship");
+const fio = document.getElementById("fio");
+const telnuber = document.getElementById("telnuber");
+const jobTitle = document.getElementById("jobTitle");
+const сitizenship = document.getElementById("сitizenship");
+const message = document.getElementById("message")
 
 
 fio.addEventListener("input", function(){
@@ -25,19 +26,14 @@ fio.addEventListener("input", function(){
 	}
 	else {
 		tg.MainButton.setText("Отправить");
-		let datafio = document.getElementById("fio").value;
 
-        datafio.value = `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`;
+        fio.value = `${tg.initDataUnsafe.user.first_name + tg.initDataUnsafe.user.last_name}`;        
 
-        let datamuber = document.getElementById("telnuber").value;
-        let datajobTitle = document.getElementById("jobTitle").value;
-        let dataсitizenship = document.getElementById("сitizenship").value;
-        let datamessage = document.getElementById("message").value;
-        item.fio = datafio;
-        item.muber = datamuber;
-        item.jobTitle = datajobTitle;
-        item.сitizenship = dataсitizenship;
-        item.message = datamessage;
+        item.fio = fio.value;
+        item.muber = telnuber;
+        item.jobTitle = jobTitle;
+        item.сitizenship = сitizenship;
+        item.message = message.value;
 		tg.MainButton.show();
 	}
 });
