@@ -39,5 +39,5 @@ fio.addEventListener("input", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-  JSON.stringify(tg.sendData(item));
+  tg.sendData(JSON.stringify(item));
 });
