@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'FB';
-    src: url('fonts/CeraPro-Black.ttf');
+    src: url('fonts/Circe-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'FBBOLD';
-    src: url('fonts/CeraPro-Bold.ttf');
+    src: url('fonts/Circe-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
-	font-family: 'FB';
+	font-family: 'FBBOLD';
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
 
@@ -24,7 +24,7 @@ body {
 	max-width: 390px;
 }
 .logo{
-	width: 90%;
+	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
 	height: 100%;
@@ -37,6 +37,8 @@ body {
 
 .labtext{
     text-align: center;
+	font-size: 24px;
+
 }
 .form-box{
     display: flex;
@@ -57,18 +59,23 @@ body {
     border-radius: 8px;
     padding-left: 12px;
     margin: 0;
-	font-family: 'FB';
+	font-family: 'FBBOLD';
+	resize: none;
 }
 .inputbox  textarea{
 	max-width: 251px;
 	min-width: 251px;
-	max-height: 50px;
-	min-height: 50px;
+	max-height: 60px;
+	min-height: 60px;
+}
+ .others, #jobTitle {
+	color: rgb(188, 20, 11);;
 }
 .labtext{
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
 .btn {
 	display: inline-block;
 	padding: 10px 20px;
