@@ -13,7 +13,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
+	font-size: 15px;
 	font-family: 'FBBOLD';
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
@@ -37,7 +37,7 @@ body {
 
 .labtext{
     text-align: center;
-	font-size: 24px;
+	font-size: 15px;
 
 }
 .form-box{
@@ -53,7 +53,7 @@ body {
 
 .inputbox input, select, textarea{
 	background-color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     height: 100%;
     border: 1px solid #787878;
     border-radius: 8px;
